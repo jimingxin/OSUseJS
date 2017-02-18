@@ -1,0 +1,48 @@
+<html>
+  <!-- 网页的描述信息 -->
+  <head>
+      <meta charset="UTF-8">
+      <title>HeiheiJSWithOC</title>
+
+      <script>
+          function ceshi()
+          {
+              //没有参数时
+              location.href = 'heihei://ceshi';
+          }
+          function ceshi1()
+          {
+              //一个参数时
+              location.href = 'heihei://ceshi_?100';
+          }
+          function ceshi2()
+          {
+              //二个参数时
+              location.href = 'heihei://ceshi_number2_?100&200';
+          }
+          function ceshi3()
+          {
+              //三个参数时
+              location.href = 'heihei://ceshi_number2_number3_?100&200&300';
+          }
+          function test(){
+
+              alert("ceshi");
+          }
+      </script>
+  </head>
+  <!-- 网页的具体内容 -->
+  <body>
+      <div>电话：10086</div>
+      <br>
+      <button style="color:white ;background-color: red; width:100px; height:30px; margin-top:5px" onclick="ceshi();">测试无参数</button>
+      <br>
+      <button style="color:white ;background-color: red; width:100px; height:30px; margin-top:5px" onclick="ceshi1();">测试1个参数</button>
+      <br>
+      <button style="color:white ;background-color: red; width:100px; height:30px; margin-top:5px" onclick="ceshi2();">测试2个参数</button>
+      <br>
+      <button style="color:white ;background-color: red; width:100px; height:30px; margin-top:5px" onclick="ceshi3();">测试3个参数</button>
+      <br>
+      <a href="http://www.baidu.com">百度</a>
+  </body>
+</html>
